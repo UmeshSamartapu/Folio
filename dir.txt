@@ -1,0 +1,7 @@
+my-portfolio/
+├── main.py          # FastAPI application
+├── requirements.txt # Dependencies
+├── static/          # CSS and images
+│   └── style.css
+└── templates/
+    └── index.html   # HTML template
