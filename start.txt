@@ -20,3 +20,7 @@ pip install fastapi uvicorn jinja2 python-multipart
 conda install -c conda-forge fastapi uvicorn jinja2 python-multipart
 
 # Start the development server with auto-reload
+uvicorn main:app --reload
+
+# Generate requirements.txt (if you modified dependencies)
+pip freeze > requirements.txt
