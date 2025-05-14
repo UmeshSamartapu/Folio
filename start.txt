@@ -1,0 +1,22 @@
+# Create a new conda environment named 'portfolio-env' with Python 3.9
+conda create -n E309 python=3.9
+
+# Activate the environment
+conda activate E309
+
+# Create project directory
+mkdir my-portfolio
+cd my-portfolio
+
+# Create required files
+touch main.py requirements.txt
+mkdir -p templates static
+touch templates/index.html static/style.css
+
+# Install packages from requirements.txt
+pip install fastapi uvicorn jinja2 python-multipart
+
+# Or alternatively (if you prefer conda):
+conda install -c conda-forge fastapi uvicorn jinja2 python-multipart
+
+# Start the development server with auto-reload
